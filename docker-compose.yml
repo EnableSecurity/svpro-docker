@@ -2,6 +2,7 @@ version: '3.9'
 
 services:
   svprobase:
+    image: ghcr.io/enablesecurity/svpro-docker:latest
     build:
       context: base
   
