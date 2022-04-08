@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  svprobase:
+    build:
+      context: base
+  
+  svpro:
+    build:
+      context: .
+      args:
+        - SVPRO_URL
+        - SVPRO_DLFN=sipviciouspro-latest.zip
+    network_mode: host
+    pull_policy: never
+    ulimits:
+      nofile:
+        soft: 32768
+        hard: 32768
