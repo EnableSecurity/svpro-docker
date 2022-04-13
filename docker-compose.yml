@@ -18,3 +18,6 @@ services:
       nofile:
         soft: 32768
         hard: 32768
+    volumes:
+      - .:/home:rw
+    working_dir: /home
