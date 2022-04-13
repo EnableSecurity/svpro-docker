@@ -25,6 +25,8 @@ docker-compose run svpro
 sipvicious sip utils ping udp://demo.sipvicious.pro:5060
 ```
 
+The host working directory is mapped to `/home` and the working directory in the Docker 
+container is set to `/home` so that templates and other files can be shared.
 
 ## Upgrading
 
