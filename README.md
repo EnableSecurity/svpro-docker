@@ -45,3 +45,12 @@ To make use of an alternative download file, instead of the default (`sipvicious
 SVPRO_URL=https://downloadurl SVPRO_DLFN=sipviciouspro-delux.zip docker-compose build svpro
 ```
 
+## Adding a helper tool
+
+If you would like to run sipvicious without having to type docker or docker-compose commands, you can place a bash script in your `$PATH` (e.g. in `/usr/local/bin`) containing the something like following:
+
+```bash
+#!/bin/bash
+cd /path/to/svpro-docker
+docker-compose run svpro sipvicious $@
+```
