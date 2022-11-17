@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 if ! [ -n "$SVPRO_URL" ]; then
   echo "Please set the SVPRO_URL environment variable"
   exit 1
