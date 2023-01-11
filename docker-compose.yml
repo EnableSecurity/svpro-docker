@@ -19,5 +19,5 @@ services:
         soft: 32768
         hard: 32768
     volumes:
-      - .:/home:rw
+      - ./share:/home:rw
     working_dir: /home
